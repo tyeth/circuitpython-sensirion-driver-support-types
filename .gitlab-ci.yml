@@ -1,0 +1,35 @@
+include: https://gitlab.sensirion.lokal/Sensirion/Python/ci-config-python/raw/master/gitlab-ci-template-v2.yml
+
+check_rst_syntax:
+  extends: .check_rst_syntax_v2
+
+check_editorconfig:
+  extends: .check_editorconfig_v2
+
+py3p8_linux_sdist:
+  extends: .py3p8_linux_sdist_v2
+
+py3p6_linux_build:
+  extends: .py3p6_linux_build_v2
+
+py3p8_linux_build:
+  extends: .py3p8_linux_build_v2
+
+py3p8_64bit_win_build:
+  extends: .py3p8_64bit_win_docker_build_v2
+
+build_docs:
+  extends: .build_docs_v2
+
+deploy_staging:
+  extends: .deploy_staging_v2
+
+deploy_stable:
+  extends: .deploy_stable_v2
+
+# Deploy all files within the "public" directory of the artifacts from the jobs
+# specified as dependencies. Job must be named pages, otherwise gitlab does
+# not deploy to gitlab pages.
+pages:
+  extends: .deploy_pages_v2
+  dependencies: [build_docs]
