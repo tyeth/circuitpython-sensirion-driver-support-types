@@ -38,5 +38,3 @@ class BitfieldContainer:
     @property
     def value(self):
         return self._int_value
-
-

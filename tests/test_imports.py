@@ -2,14 +2,14 @@
 # -*- coding: utf-8 -*-
 
 import importlib
-from setuptools import find_packages
 import pkgutil
 import re
 from os import path
+
 from pytest import mark
+from setuptools import find_packages
 
 EXCLUDES = []  # Regex: remember to use \. !
-
 
 root_path = path.join(path.dirname(__file__), "..")
 
