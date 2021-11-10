@@ -1,11 +1,14 @@
 import abc
+
 from typing import Union
 
 
 class AbstractSignal(abc.ABC):
+    """Describes the protocol of any signal used within a driver.
+    """
 
     @property
-    def name(self):
+    def name(self) -> str:
         name: str = self.__class__.__name__
         label = 'Signal'
         label_len = len(label)
@@ -42,7 +45,7 @@ class ScaleAndOffsetSignal(AbstractSignal):
         return self._fmt
 
     @number_format.setter
-    def number_format(self, value):
+    def number_format(self, value: str) -> None:
         self._fmt = value
 
     @property

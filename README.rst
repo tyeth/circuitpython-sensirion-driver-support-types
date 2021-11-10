@@ -1,5 +1,5 @@
-<sensirion-package-name>
-========================
+sensirion-driver-support-types
+==============================
 
 Install
 -------
