@@ -1,2 +1,4 @@
-# python driver support types
+# Sensirion Driver Support Types
 
+---
+### Checklist for a new package
