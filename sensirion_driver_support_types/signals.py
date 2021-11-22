@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import abc
 
 from typing import Union
@@ -36,7 +37,7 @@ class ScaleAndOffsetSignal(AbstractSignal):
                  scaling: Union[int, float] = 1.0,
                  offset: Union[int, float] = 0.0,
                  num_digits: int = 6,
-                 num_decimals: int = 2):
+                 num_decimals: int = 2) -> None:
         self._fmt = f'{{:{num_digits - num_decimals}.{num_decimals}f}}'
         self._value = (raw_value - offset) / scaling
 
