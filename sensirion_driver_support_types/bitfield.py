@@ -1,4 +1,4 @@
-
+# -*- coding: utf-8 -*-
 from typing import Any, NamedTuple
 
 """Allow to specify the offset and the width of a bitfield within an integer"""

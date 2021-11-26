@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import pytest
 
 from sensirion_driver_support_types.signals import AbstractSignal, ScaleAndOffsetSignal
