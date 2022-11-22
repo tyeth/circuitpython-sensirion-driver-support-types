@@ -3,6 +3,7 @@
 
 import os
 import re
+
 from setuptools import setup, find_packages
 
 ################################
@@ -37,20 +38,19 @@ author_email = 'rolf.laich@sensirion.com'
 description = 'Supporting classes for Sensirion drivers'
 keywords = 'driver '
 
-
 ################################
 # Required developer input end
 ################################
 
-assert(package_name != "<sensirion-package-name>")
-assert(author != "<full name author>")
-assert(author_email != '<firstname.familyname>@sensirion.com')
-assert(description != '<short description of the package>')
-assert(keywords != '<keywords meaningful>')
+assert (package_name != "<sensirion-package-name>")
+assert (author != "<full name author>")
+assert (author_email != '<firstname.familyname>@sensirion.com')
+assert (description != '<short description of the package>')
+assert (keywords != '<keywords meaningful>')
 
 # Note: Remove this check only for old packages which do not (yet) have the
 # "sensirion-" prefix for compatibility reasons.
-assert(package_name.startswith("sensirion-"))
+assert (package_name.startswith("sensirion-"))
 
 # It is important to NOT import anything, not even the version, from the package which is being built.
 # Otherwise weird behavior is guaranteed.

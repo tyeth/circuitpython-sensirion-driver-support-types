@@ -38,3 +38,13 @@ def test_bitfield_decorator_set():
     assert sw.exp_smoothing_flag == 1
     assert sw.gas_conc == 516
     assert sw.value == 0b1100111000000100
+
+
+def test_bitfield_to_str():
+    sw = StatusWord(0)
+    assert str(sw) == "{gas_conc: 0x0, avg_mode_flag: 0x0, exp_smoothing_flag: 0x0, command_code: 0x0}"
+
+
+def test_bitfield_to_int():
+    sw = StatusWord(0)
+    assert int(sw) == 0

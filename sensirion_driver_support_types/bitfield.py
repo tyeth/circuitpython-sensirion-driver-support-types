@@ -12,6 +12,16 @@ class BitfieldContainer:
     def __init__(self, int_value: int = 0):
         self._int_value: int = int_value
 
+    def __str__(self):
+        field_values = []
+        for item, value in self.__class__.__dict__.items():
+            if isinstance(value, BitField):
+                field_values.append(f'{item}: {hex(self._get_value(value))}')
+        return f"{{{', '.join(field_values)}}}"
+
+    def __int__(self):
+        return self.value
+
     def __getattribute__(self, item: str) -> Any:
         attr = super().__getattribute__(item)
         if isinstance(attr, BitField):
