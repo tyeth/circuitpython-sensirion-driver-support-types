@@ -46,3 +46,5 @@ html_theme = 'sphinx_rtd_theme'
 
 # Workaround for weirdly formatted function parameters. See https://github.com/readthedocs/sphinx_rtd_theme/issues/766
 html4_writer = True
+
+master_doc = 'index'
