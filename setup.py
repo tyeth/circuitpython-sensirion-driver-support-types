@@ -32,7 +32,7 @@ extras_require = {
     ]
 }
 
-package_name = "sensirion-driver-support-types"
+package_name = "circuitpython-sensirion-driver-support-types"
 author = 'Rolf Laich'
 author_email = 'rolf.laich@sensirion.com'
 description = 'Supporting classes for Sensirion drivers'

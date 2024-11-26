@@ -1,4 +1,4 @@
-Welcome to sensirion-driver-support-types's documentation!
+Welcome to circuitpython-sensirion-driver-support-types's documentation!
 ==========================================================
 
 .. toctree::

@@ -6,7 +6,7 @@ This repository contains utility classes that are used in various sensirion pyth
 ## Usage
 
 See package description in [README.rst](README.rst) and user manual at
-https://sensirion.github.io/sensirion-driver-support-types/.
+https://sensirion.github.io/circuitpython-sensirion-driver-support-types/.
 
 ## Development
 

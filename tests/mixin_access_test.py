@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from sensirion_driver_support_types.mixin_access import MixinAccess
+from circuitpython_sensirion_driver_support_types.mixin_access import MixinAccess
 
 
 class Abase:

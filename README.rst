@@ -1,11 +1,11 @@
-sensirion-driver-support-types
+circuitpython-sensirion-driver-support-types
 ==============================
 
 Install
 -------
 .. sourcecode:: bash
 
-    pip install sensirion-driver-support-types
+    pip install circuitpython-sensirion-driver-support-types
 
 Recommended usage is within a virtualenv.
 
@@ -13,5 +13,5 @@ Usage
 -----
 .. sourcecode:: python
 
-    import sensirion_driver_support_types
+    import circuitpython_sensirion_driver_support_types
 
